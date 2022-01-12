@@ -1,0 +1,61 @@
+/* Base font  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+html {
+    font-size: 13px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tailwind - Roll-up classes for shortcuts */
+@layer components {
+    .btn-primary {
+        @apply flex items-center h-8 px-2 font-semibold text-white bg-brandBlue-400 border border-brandBlue-800 rounded shadow-sm  hover:shadow focus:outline-none focus:bg-gradient-to-t focus:from-brandBlue-700 focus:to-brandBlue-700 focus:ring-2 focus:ring-offset-2 focus:ring-brandBlue-100;
+    }
+    .btn-default {
+        @apply flex h-8 py-0 px-2 font-semibold items-center text-slate-900 bg-slate-50 bg-gradient-to-t from-slate-100 to-white border border-slate-400 rounded shadow-sm hover:shadow focus:outline-none focus:bg-gradient-to-t focus:from-slate-100 focus:to-slate-100 focus:ring-2 focus:ring-offset-2 focus:ring-brandBlue-100;
+    }
+    .btn-outline {
+        @apply flex h-8 py-0 px-2 font-semibold items-center text-slate-900 bg-transparent border border-slate-300 rounded hover:border-slate-400 focus:outline-none focus:bg-slate-100 focus:ring-2 focus:ring-offset-2 focus:ring-brandBlue-100;
+    }
+    .input-base{
+        @apply block w-full h-8 px-2 py-0 border border-slate-400 rounded shadow-sm hover:border-slate-500 focus:outline-none focus:ring-2 focus:ring-brandBlue-100/50 focus:border-brandBlue-600;
+    }
+}
+
+/* CodeMirror */
+.CodeMirror {
+    height: 100% !important;
+}
+.CodeMirror-readOnly > .CodeMirror * .CodeMirror-cursor{
+    display: none;
+}
+.CodeMirror-readOnly * .CodeMirror-scroll{
+    background: #f1f5f9;
+}
+
+/* SplitJS */
+.gutter.gutter-horizontal{
+    position: relative;
+    z-index: 100;
+    background: rgb(174 186 201 / 40%);
+}
+.gutter.gutter-vertical{
+    position: relative;
+    z-index: 100;
+    background: rgb(174 186 201 / 40%);
+}
+
+.gutter.gutter-horizontal:hover {
+    cursor: col-resize;
+    background: #1699e2;
+    border-left:1px solid #1699e2;
+    border-right:1px solid #1699e2;
+}
+.gutter.gutter-vertical:hover {
+    cursor: row-resize;
+    background: #1699e2;
+    border-top:1px solid #1699e2;
+    border-bottom:1px solid #1699e2;
+}
