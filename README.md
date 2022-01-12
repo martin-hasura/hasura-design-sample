@@ -1,3 +1,5 @@
+![Sample Layout Screenshot](sample-layout-screenshot.png)
+
 This is a design sample which contains a simplified version of our design space.
 
 It includes the sample boilerplate (Svelte / Vite / Tailwind) and some sample layouts. 

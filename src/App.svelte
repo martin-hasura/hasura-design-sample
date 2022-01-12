@@ -1,7 +1,6 @@
 <script>
   // ==== Import Routes ====
   import { Router, Route } from "svelte-navigator";
-  import Home from "@/pages/Home.svelte";
   // --> Import Demo Design Elements
   import LayoutSidebarLeft from "@/pages/kit/LayoutSidebarLeft.svelte";
   import LayoutSidebarRight from "@/pages/kit/LayoutSidebarRight.svelte";
